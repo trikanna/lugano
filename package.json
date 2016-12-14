@@ -1,0 +1,28 @@
+{
+  "name": "lugano",
+  "version": "1.0.0",
+  "description": "Electron example to intercept custom protocol from a webpage",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run serve\"  \"npm run web\" && npm run electron ",
+    "serve": "http-server .",
+    "electron": "electron .",
+    "web": "open \"http://localhost:8080\"",
+    "build": "rimraf builds && electron-packager . Lugano --platform=darwin --out=builds --version-string.CompanyName=Santiago Camelo --icon=icon.icns --protocol=['trikanna'] --protocol-name=trikanna && npm run serve & npm run web"
+  },
+  "author": "Santiago Camelo <trikanna@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "devtron": "^1.4.0",
+    "electron": "^1.4.12",
+    "electron-packager": "^8.4.0",
+    "http-server": "^0.9.0",
+    "open": "0.0.5",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "electron-is-dev": "^0.1.2",
+    "lodash": "^4.17.2"
+  }
+}

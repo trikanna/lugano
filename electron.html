@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron Interceptor</title>
+
+    <style>
+        html, body { margin: 0; padding: 0; overflow: hidden;}
+        body {
+            padding: 30px;
+            font: menu;
+            font-size: 13px;
+            color: #383838;
+            cursor: default;
+            -webkit-user-select: none;
+            -webkit-app-region: drag
+        }
+
+        h1 {
+            font-weight: 300;
+            margin: 15px 0 12px 0;
+        }
+
+        a {
+            display: block;
+            color: dodgerblue;
+            margin-bottom: 42px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            font-family: 'menlo', 'monaco', monospace;
+            font-size: 12px;
+            line-height: 14px;
+            background: #eee;
+            padding: 10px;
+            border-radius: 3px;
+            height: 100px;
+
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+
+    <script>
+        require('./lugano');
+    </script>
+</head>
+<body>
+
+    <h1>Yup... this will intercept your Custom Protocol</h1>
+    <a href="http://electron.atom.io/docs/api/protocol/" target="_blank">electron.atom.io/docs/api/protocol</a>
+    <pre class="data-container">hi!</pre>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron Protocol Interceptor Trigger</title>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            background: #eee;
+            letter-spacing: 0.037em;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 17px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <header>
+        <h1>Electron Protocol Interceptor Examples</h1>
+
+        <ul>
+            <li><a class="trigger-from-link" href="#">Toggle Debug On/Off</a></li>
+            <li><a href="trikanna://action=showNotes&uuid=5c14ff44-397f-11e6-9312-063c4950d72f">show</a>:
+                5c14ff44-397f-11e6-9312-063c4950d72f
+            </li>
+            <li><a href="trikanna://action=showNotes&uuid=dead747e-0e12-11e6-9312-063c4950d72f">show</a>:
+                dead747e-0e12-11e6-9312-063c4950d72f
+            </li>
+        </ul>
+
+        <p>Please open application at: <pre>/build/Lugano-darwin-x64/Lugano</pre></p>
+    </header>
+</section>
+
+<script>
+    const link = document.querySelector('.trigger-from-link');
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.href = 'trikanna://action=toggleDebug';
+    })
+</script>
+
+</body>
+</html>
