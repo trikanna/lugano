@@ -1,6 +1,7 @@
 # Lugano
 
 [![Join the chat at https://gitter.im/trikanna-lugano/Lobby](https://badges.gitter.im/trikanna-lugano/Lobby.svg)](https://gitter.im/trikanna-lugano/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Electron example to intercept custom protocol from a webpage
 
 ![Lugano](resources/lugano.png?raw=true "Lugano")
