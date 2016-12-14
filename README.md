@@ -6,13 +6,12 @@ Electron example to intercept custom protocol from a webpage
 
 ## Setup
 
-```git clone https://github.com/trikanna/lugano.git```
-
-```cd lugano```
-
-```npm install``` if you have free time.
-
-```yarn``` if you don't want to kill a kitten.
+```
+git clone https://github.com/trikanna/lugano.git
+cd lugano
+npm install (if you have free time) or
+yarn (if you don't want to kill a kitten)
+```
 
 ## Start
 ```npm start```
