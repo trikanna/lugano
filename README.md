@@ -21,3 +21,5 @@ yarn (if you don't want to kill a kitten)
 ```npm run build```
 
 This will generate a darwin build and open a browser with the html example.
+
+![Screenshot](resources/Screenshot.png?raw=true "Screenshot")
