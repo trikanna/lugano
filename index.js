@@ -20,6 +20,7 @@ app.on('ready', () => {
         height: 360,
         resize: false,
         maximizable: false,
+        vibrancy: 'light',
         titleBarStyle: 'hidden-inset'
     });
 
